@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Certifications from "@/components/Certifications";
 import {
   ArrowUpRight,
   Github,
@@ -107,6 +108,8 @@ export default function Home() {
               <a href="#projects" className="hover:text-white transition">Projects</a>
               <a href="#experience" className="hover:text-white transition">Experience</a>
               <a href="#education" className="hover:text-white transition">Education</a>
+              <a href="#certifications" className="hover:text-white transition">Certifications</a>
+              <a href="/cv" className="hover:text-white transition">CV</a>
               <a href="#contact" className="hover:text-white transition">Contact</a>
             </div>
           </div>
@@ -234,6 +237,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Certifications />
 
       <section id="experience" className="py-28">
         <div className="container-shell grid lg:grid-cols-[0.8fr_1.2fr] gap-14">
