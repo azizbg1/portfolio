@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #07090f;
+  --panel: rgba(255, 255, 255, 0.055);
+  --panel-strong: rgba(255, 255, 255, 0.085);
+  --line: rgba(255, 255, 255, 0.11);
+  --text: #f8fafc;
+  --muted: #9ca3af;
+  --cyan: #55e6ff;
+  --violet: #a78bfa;
+  --blue: #5b8cff;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(85, 230, 255, 0.10), transparent 26%),
+    radial-gradient(circle at 90% 10%, rgba(167, 139, 250, 0.12), transparent 24%),
+    linear-gradient(180deg, #06080d 0%, #0a0d14 100%);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection { background: rgba(85,230,255,.25); color: white; }
+
+.container-shell {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.glass {
+  background: linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.035));
+  border: 1px solid var(--line);
+  box-shadow: 0 20px 60px rgba(0,0,0,.24);
+  backdrop-filter: blur(18px);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #fff 0%, var(--cyan) 45%, var(--violet) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-kicker {
+  color: var(--cyan);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  font-size: .72rem;
+  font-weight: 700;
+}
+
+.project-card {
+  transition: transform .28s ease, border-color .28s ease, background .28s ease;
+}
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(85,230,255,.35);
+  background: linear-gradient(180deg, rgba(255,255,255,.095), rgba(255,255,255,.04));
+}
+
+.pill {
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.045);
+  border-radius: 999px;
+  padding: .45rem .72rem;
+  font-size: .78rem;
+  color: #d1d5db;
+}
+
+.timeline-line {
+  background: linear-gradient(180deg, var(--cyan), var(--violet), transparent);
+}
+
+.hero-orb {
+  filter: blur(18px);
+  opacity: .75;
+  animation: float 7s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-18px); }
+}
+
+@media (max-width: 768px) {
+  .container-shell { width: min(100% - 24px, 1180px); }
+}
