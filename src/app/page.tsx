@@ -132,7 +132,7 @@ export default function Home() {
 
           <FadeIn delay={0.16}>
             <p className="mt-8 max-w-2xl text-lg md:text-xl leading-8 text-zinc-400">
-              I’m Aziz Ben Guirat, a Full-Stack Developer with a 5-year engineering background at ESPRIT and an M2 in Data Science in Business. I build scalable web applications, secure backends and AI-powered products.
+              I’m Aziz Ben Guirat, a Full-Stack Developer with a 5-year engineering background at ESPRIT and an M2 in Data Science in Business at Paris School of Technology &amp; Business. I build scalable web applications, secure backends and AI-powered products.
             </p>
           </FadeIn>
 
@@ -297,10 +297,11 @@ export default function Home() {
               <div className="glass rounded-3xl p-8 h-full">
                 <div className="flex items-center gap-3">
                   <Layers3 className="text-violet-300" />
-                  <span className="text-sm text-zinc-500">Paris · Master 2</span>
+                  <span className="text-sm text-zinc-500">Paris · Master 2 · 2025–2026</span>
                 </div>
                 <h3 className="text-3xl font-black mt-6">M2 Data Science in Business</h3>
-                <p className="text-zinc-300 mt-2">Advanced specialization in data, machine learning and AI.</p>
+                <p className="text-zinc-300 mt-2">Paris School of Technology &amp; Business (PST&amp;B)</p>
+                <p className="text-zinc-400 mt-2">Advanced specialization in data, machine learning and AI.</p>
                 <p className="text-zinc-500 leading-7 mt-5">
                   Focused on practical data science, machine learning, NLP, intelligent systems and business-oriented AI applications.
                 </p>
