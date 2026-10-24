@@ -92,7 +92,7 @@ export default function CVPage() {
           <section className="py-8">
             <h2 className="text-xl font-black">Education</h2>
             <div className="mt-5 space-y-3 text-zinc-400">
-              <p><strong className="text-white">M2 Data Science in Business</strong> · PST&B, Paris · 2025–2026</p>
+              <p><strong className="text-white">M2 Data Science in Business</strong> · Paris School of Technology &amp; Business (PST&amp;B), Paris · 2025–2026</p>
               <p><strong className="text-white">Computer Engineering Degree</strong> · ESPRIT, Tunisia · 5-year engineering curriculum</p>
             </div>
           </section>
